@@ -98,7 +98,7 @@ git不需要安装因为Xcode已经自带了
 git不需要安装因为Xcode已经自带了
 
 安装Nodejs 管理员权限安装sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.7/insta">
-<meta property="og:updated_time" content="2016-09-10T05:29:15.000Z">
+<meta property="og:updated_time" content="2016-09-10T05:40:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="轻松的搭建放在git管理的个人主页">
 <meta name="twitter:description" content="git里面创建一个空仓库，设置仓库名 username.github.io（username 需要和Owner一致就是git的账号名） 选择Public 点击创建 
@@ -313,16 +313,13 @@ git不需要安装因为Xcode已经自带了
 </ol>
 <p>11.打开文件位置username.github.io/_config.yml修改几个键值对，下面把几个必须设置的列出来按需求修改，记得保存， 还有注意配置的键值之间一定要有空格。<br>title: 我的空间    //你博客的名字<br>author: 我的空间  //你的名字<br>language: zh-Hans    //语言 中文<br>theme: next   //刚刚安装的主题名称<br>deploy:<br>type: git    //使用Git 发布<br>repo: <a href="https://github.com/username/username.github.io.git" target="_blank" rel="external">https://github.com/username/username.github.io.git</a>    // 刚创建的Github仓库</p>
 <ol>
-<li>写文章<br>所有基础框架都已经创建完成，接下来可以开始写你的第一篇博客了<br>在username.github.io/source/_posts下创建你的第一个博客吧，例如，创建一个名为XXX.md的文件，注意保存。<br>如：</li>
-</ol>
-<hr>
-<h2 id="title-XXX-随便发挥"><a href="#title-XXX-随便发挥" class="headerlink" title="title: XXX(随便发挥)"></a>title: XXX(随便发挥)</h2><p>有了你，我迷失了自我。</p>
-<ol>
+<li><p>写文章<br>所有基础框架都已经创建完成，接下来可以开始写你的第一篇博客了<br>在username.github.io/source/_posts下创建你的第一个博客吧，例如，创建一个名为XXX.md的文件，注意保存。<br>/      如：<br>/      —<br>/      title: XXX(随便发挥)<br>/      —<br>/      &gt; 有了你，我迷失了自我。</p>
+</li>
 <li><p>进入仓库目录下安装目录，运行 npm install 安装依赖，并启动Hexo<br>$ hexo s<br>测试服务启动，你可以在浏览器中输入<a href="https://localhost:4000" target="_blank" rel="external">https://localhost:4000</a> 访问了。</p>
 </li>
 <li><p>一定要进入仓库目录下安装 hexo-deployer-git自动部署发布工具<br>$ npm install hexo-deployer-git –save</p>
 </li>
-<li><p>发布(3个指令依次执行)<br>测试没问题后，我们就生成静态网页文件发布至我们的Github pages 中。<br>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p>
+<li><p>进入仓库目录 发布(3个指令依次执行,以后每次发布只要执行这句代码就可以了)<br>测试没问题后，我们就生成静态网页文件发布至我们的Github pages 中。<br>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p>
 </li>
 </ol>
 </blockquote>
@@ -347,20 +344,6 @@ git不需要安装因为Xcode已经自带了
     <footer class="post-footer">
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/09/09/FirstNight/" rel="next" title="First Night">
-                <i class="fa fa-chevron-left"></i> First Night
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -425,7 +408,7 @@ git不需要安装因为Xcode已经自带了
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -457,7 +440,7 @@ git不需要安装因为Xcode已经自带了
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-XXX-随便发挥"><span class="nav-number">1.</span> <span class="nav-text">title: XXX(随便发挥)</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
