@@ -84,16 +84,28 @@
 
 
 
-<meta name="description" content="我有一头小毛驴，可是我从来都不骑。">
+<meta name="description" content="git里面创建一个空仓库，设置仓库名 username.github.io（username 需要和Owner一致就是git的账号名） 选择Public 点击创建 
+
+git不需要安装因为Xcode已经自带了
+
+安装Nodejs 管理员权限安装sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.7/insta">
 <meta property="og:type" content="article">
-<meta property="og:title" content="First Night">
-<meta property="og:url" content="http://yoursite.com/2016/09/09/FirstNight/index.html">
+<meta property="og:title" content="轻松的搭建放在git管理的个人主页">
+<meta property="og:url" content="http://yoursite.com/2016/09/10/9.10搭建git个人首页流程/index.html">
 <meta property="og:site_name" content="管祥的 600 空间">
-<meta property="og:description" content="我有一头小毛驴，可是我从来都不骑。">
-<meta property="og:updated_time" content="2016-09-09T15:24:51.000Z">
+<meta property="og:description" content="git里面创建一个空仓库，设置仓库名 username.github.io（username 需要和Owner一致就是git的账号名） 选择Public 点击创建 
+
+git不需要安装因为Xcode已经自带了
+
+安装Nodejs 管理员权限安装sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.7/insta">
+<meta property="og:updated_time" content="2016-09-10T05:29:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="First Night">
-<meta name="twitter:description" content="我有一头小毛驴，可是我从来都不骑。">
+<meta name="twitter:title" content="轻松的搭建放在git管理的个人主页">
+<meta name="twitter:description" content="git里面创建一个空仓库，设置仓库名 username.github.io（username 需要和Owner一致就是git的账号名） 选择Public 点击创建 
+
+git不需要安装因为Xcode已经自带了
+
+安装Nodejs 管理员权限安装sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.7/insta">
 
 
 
@@ -114,9 +126,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/09/FirstNight/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/10/9.10搭建git个人首页流程/"/>
 
-  <title> First Night | 管祥的 600 空间 </title>
+  <title> 轻松的搭建放在git管理的个人主页 | 管祥的 600 空间 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -236,7 +248,7 @@
             
             
               
-                First Night
+                轻松的搭建放在git管理的个人主页
               
             
           </h1>
@@ -248,8 +260,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-09T22:48:53+08:00" content="2016-09-09">
-              2016-09-09
+            <time itemprop="dateCreated" datetime="2016-09-10T12:48:36+08:00" content="2016-09-10">
+              2016-09-10
             </time>
           </span>
 
@@ -277,7 +289,42 @@
 
       
         <blockquote>
-<p>我有一头<strong>小毛驴</strong>，可是我从来都不骑。</p>
+<ol>
+<li><p>git里面创建一个空仓库，设置仓库名 username.github.io（username 需要和Owner一致就是git的账号名） 选择Public 点击创建 </p>
+</li>
+<li><p>git不需要安装因为Xcode已经自带了</p>
+</li>
+<li><p>安装Nodejs 管理员权限安装<br>sudo curl -o- <a href="https://raw.githubusercontent.com/creationix/nvm/v0.31.7/install.sh" target="_blank" rel="external">https://raw.githubusercontent.com/creationix/nvm/v0.31.7/install.sh</a> | bash</p>
+</li>
+<li><p>安装好之后打开用户目录下找到2个影藏文件 ~/.bashrc/.profile 分别打开在最后面添加上<br>export NVM_DIR=”$HOME/.nvm”<br>[ -s “$NVM_DIR/nvm.sh” ] &amp;&amp; . “$NVM_DIR/nvm.sh” # This loads nvm</p>
+</li>
+<li><p>重启终端执行执行<br>source ~/.bashrc</p>
+</li>
+<li><p>终端输入nvm 看是否安装成功 或输入 command -v nvm 安装成功会看到 nvm </p>
+</li>
+<li><p>安装Node<br>$ nvm install 4（选择的版本号，可以在git上搜索Node选择你想要的版本号） 要看到成功安装提示（可能失败，多安装几次）</p>
+</li>
+<li><p>安装hexo<br>$ sudo npm install hexo-cli -g</p>
+</li>
+<li><p>初始化hexo 用自己想用的名字<br>$ hexo init username.github.io</p>
+</li>
+<li><p>设置主题 （主题很多next用的人比较多）<br>$ cd username.github.io （进入hexo文件夹中）<br>$ git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next</p>
+</li>
+</ol>
+<p>11.打开文件位置username.github.io/_config.yml修改几个键值对，下面把几个必须设置的列出来按需求修改，记得保存， 还有注意配置的键值之间一定要有空格。<br>title: 我的空间    //你博客的名字<br>author: 我的空间  //你的名字<br>language: zh-Hans    //语言 中文<br>theme: next   //刚刚安装的主题名称<br>deploy:<br>type: git    //使用Git 发布<br>repo: <a href="https://github.com/username/username.github.io.git" target="_blank" rel="external">https://github.com/username/username.github.io.git</a>    // 刚创建的Github仓库</p>
+<ol>
+<li>写文章<br>所有基础框架都已经创建完成，接下来可以开始写你的第一篇博客了<br>在username.github.io/source/_posts下创建你的第一个博客吧，例如，创建一个名为XXX.md的文件，注意保存。<br>如：</li>
+</ol>
+<hr>
+<h2 id="title-XXX-随便发挥"><a href="#title-XXX-随便发挥" class="headerlink" title="title: XXX(随便发挥)"></a>title: XXX(随便发挥)</h2><p>有了你，我迷失了自我。</p>
+<ol>
+<li><p>进入仓库目录下安装目录，运行 npm install 安装依赖，并启动Hexo<br>$ hexo s<br>测试服务启动，你可以在浏览器中输入<a href="https://localhost:4000" target="_blank" rel="external">https://localhost:4000</a> 访问了。</p>
+</li>
+<li><p>一定要进入仓库目录下安装 hexo-deployer-git自动部署发布工具<br>$ npm install hexo-deployer-git –save</p>
+</li>
+<li><p>发布(3个指令依次执行)<br>测试没问题后，我们就生成静态网页文件发布至我们的Github pages 中。<br>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p>
+</li>
+</ol>
 </blockquote>
 
       
@@ -304,13 +351,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/09/09/FirstNight/" rel="next" title="First Night">
+                <i class="fa fa-chevron-left"></i> First Night
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/09/10/9.10搭建git个人首页流程/" rel="prev" title="轻松的搭建放在git管理的个人主页">
-                轻松的搭建放在git管理的个人主页 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -410,7 +457,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-XXX-随便发挥"><span class="nav-number">1.</span> <span class="nav-text">title: XXX(随便发挥)</span></a></li></ol></div>
             
           </div>
         </section>
